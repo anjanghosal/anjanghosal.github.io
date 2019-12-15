@@ -371,6 +371,13 @@
                     zoom: 15
                   });
                 }
+                var marker = new google.maps.Marker({
+                  position: { lat: 35.802067, lng: -83.572907 },
+                  map: map,
+                  title: "Hello World!"
+                });
+
+                marker.setMap(map);
               </script>
               <map name="countymap">
                 <area
