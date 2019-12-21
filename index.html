@@ -96,6 +96,10 @@
                       <a href="contact.html" class="nav-link text-left"
                         >Contact</a>
                     </li>
+                    <li>
+                      <a id="quiz" class="nav-link text-left"
+                        >Quiz</a>
+                    </li>
                   </ul>
                 </nav>
               </div>
@@ -122,6 +126,7 @@
         <div
           class="intro-section container"
           style="background-image: url('./images/main/main_2.jpg');"
+          id = "quiz"
         >
           <div
             class="row justify-content-center text-center align-items-center"
@@ -129,8 +134,7 @@
             <div class="col-md-8">
               <span class="sub-title">Take our interactive quiz to find your perfect cabin</span>
               <h1>Cabins For Everyone</h1>
-              <button id="quiz" class="btn-primary"
-                        >Quiz</button>
+              
             </div>
           </div>
         </div>
@@ -440,8 +444,40 @@
 
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
+        <form action="#">
+ 
+          <div class="select-box">
+        
+            <label for="select-box1" class="label select-box1"><span class="label-desc">Select a Cabin Style</span> </label>
+            <select id="select-box1" class="select">
+              <option value="Choice 1">Modern</option>
+              <option value="Choice 2">Woodsy</option>
+              <option value="Choice 3">Country Cabin</option>
+            </select>
+            
+          </div>
+
+          <div  class="control-group">
+            <h1>Checkboxes</h1>
+            <label class="control control--checkbox">First checkbox
+              <input type="checkbox" checked="checked"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Second checkbox
+              <input type="checkbox"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Disabled
+              <input type="checkbox" disabled="disabled"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Disabled & checked
+              <input type="checkbox" disabled="disabled" checked="checked"/>
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+           
+        </form>  
       </div>
     
     </div>
@@ -475,6 +511,7 @@
       async
       defer
     ></script>
+    <script src="js/selection.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
