@@ -87,16 +87,14 @@
                     </li>
                     <li>
                       <a href="catalog.html" class="nav-link text-left"
-                        >Cabins</a
-                      >
+                        >Cabins</a>
                     </li>
                     <li>
                       <a href="events.html" class="nav-link text-left">Events</a>
                     </li>
                     <li>
                       <a href="contact.html" class="nav-link text-left"
-                        >Contact</a
-                      >
+                        >Contact</a>
                     </li>
                   </ul>
                 </nav>
@@ -129,8 +127,10 @@
             class="row justify-content-center text-center align-items-center"
           >
             <div class="col-md-8">
-              <span class="sub-title">Welcome</span>
-              <h1>Wines For Everyone</h1>
+              <span class="sub-title">Take our interactive quiz to find your perfect cabin</span>
+              <h1>Cabins For Everyone</h1>
+              <button id="quiz" class="btn-primary"
+                        >Quiz</button>
             </div>
           </div>
         </div>
@@ -435,6 +435,16 @@
     </div>
     <!-- .site-wrap -->
 
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+    
+    </div>
     <!-- loader -->
     <div id="loader" class="show fullscreen">
       <svg class="circular" width="48px" height="48px">
@@ -465,6 +475,7 @@
       async
       defer
     ></script>
+    <script src="js/modal.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
