@@ -2206,16 +2206,17 @@ body {
   grid-row: auto auto;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  .box{
-    background-color:#333;
-    padding:20px;
-    border-radius:10px;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:40px;
-    font-family:sans-serif;
-  }
-
 }
+
+.box{
+  background-color:#2277b2;
+  padding:20px;
+  border-radius:10px;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:40px;
+  font-family:sans-serif;
+}
+
