@@ -375,20 +375,20 @@
               </p>
               <div id="map" style="width:100%;height:500px"></div>
               <script>
-                var map;
                 function initMap() {
-                  map = new google.maps.Map(document.getElementById("map"), {
-                    center: { lat: 35.802067, lng: -83.572907 },
-                    zoom: 15
+                  var map = new google.maps.Map(
+                    document.getElementById("map"),
+                    {
+                      center: { lat: 35.802067, lng: -83.572907 },
+                      zoom: 15
+                    }
+                  );
+                  var marker = new google.maps.Marker({
+                    position: { lat: 35, lng: -83 },
+                    map: map,
+                    title: "Hello World!"
                   });
                 }
-                var marker = new google.maps.Marker({
-                  position: { lat: 35.802067, lng: -83.572907 },
-                  map: map,
-                  title: "Hello World!"
-                });
-
-                marker.setMap(map);
               </script>
               <map name="countymap">
                 <area
