@@ -21,17 +21,20 @@
       }
       for (let button of choice1) {
         button.onclick = function() {
+          modal1.style.display = "none";
           modal2.style.display = "block";
         }
       }
 
       for (let button of choice2) {
         button.onclick = function() {
+          modal2.style.display = "none";
           modal3.style.display = "block";
         }
       }
       for (let button of choice3) {
         button.onclick = function() {
+          modal3.style.display = "none";
           modal4.style.display = "block";
         }
       }
@@ -40,18 +43,12 @@
         modal1.style.display = "none";
       }
       span2.onclick = function() {
-        modal1.style.display = "none";
         modal2.style.display = "none";
       }
       span3.onclick = function() {
-        modal1.style.display = "none";
-        modal2.style.display = "none";
         modal3.style.display = "none";
       }
       span4.onclick = function() {
-        modal1.style.display = "none";
-        modal2.style.display = "none";
-        modal3.style.display = "none";
         modal4.style.display = "none";
       }
       
