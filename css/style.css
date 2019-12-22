@@ -2202,10 +2202,10 @@ body {
   height:auto;
   background-color:#fff;
   display:grid;
-  grid-template-columns: 400px 400px;
+  grid-template-columns: 20vw 20vw;
   grid-row: auto auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vw;
 }
 
 .box{
@@ -2216,14 +2216,14 @@ body {
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:40px;
+  font-size:2vw;
   font-family:sans-serif;
 }
 
 /* img buttons */
 .imgbtn {
   position: relative;
-  width: 100%;
+  width: auto;
   max-width: 400px;
 }
 
@@ -2252,8 +2252,11 @@ body {
 
 .centered {
   position: absolute;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
+  font-size:1vw;
+  font-family:sans-serif;
 }
