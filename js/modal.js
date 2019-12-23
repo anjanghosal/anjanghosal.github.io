@@ -1,5 +1,5 @@
-
       // Get the modal
+      var modalb = document.getElementById("bModal");
       var modal1 = document.getElementById("Modal1");
       var modal2 = document.getElementById("Modal2");
       var modal3 = document.getElementById("Modal3");
@@ -10,13 +10,15 @@
       var choice2 = document.getElementsByClassName("choice2");
       var choice3 = document.getElementsByClassName("choice3");
       // Get the <span> element that closes the modal
+      var spanb = document.getElementById("close");
       var span1 = document.getElementById("close1");
       var span2 = document.getElementById("close2");
       var span3 = document.getElementById("close3");
       var span4 = document.getElementById("close4");
       
-      // When the user clicks the button, open the modal 
+      // When the user clicks the button, open the modal
       btn.onclick = function() {
+        modalb.style.display = "none";
         modal1.style.display = "block";
       }
       for (let button of choice1) {
@@ -39,6 +41,9 @@
         }
       }
       // When the user clicks on <span> (x), close the modal
+      spanb.onclick = function() {
+        modalb.style.display = "none";
+      }
       span1.onclick = function() {
         modal1.style.display = "none";
       }
@@ -61,3 +66,5 @@
           modal4.style.display = "none";
         }
       }
+
+      setTimeout(function(){modalb.style.display = "block";}, 3000);

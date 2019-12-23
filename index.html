@@ -104,10 +104,6 @@
                       <a href="contact.html" class="nav-link text-left"
                         >Contact</a>
                     </li>
-                    <li>
-                      <a id="quiz" class="nav-link text-left"
-                        >Quiz</a>
-                    </li>
                   </ul>
                 </nav>
               </div>
@@ -175,7 +171,7 @@
           </div>
         </div>
       </div>
-
+      
       <div class="site-section mt-5">
         <div class="container">
           <div class="row mb-5">
@@ -412,7 +408,7 @@
           </div>
         </div>
       </div>
-
+      <a class="weatherwidget-io" style="vertical-align: -200px" href="https://forecast7.com/en/35d71n83d51/gatlinburg/?unit=us" data-label_1="GATLINBURG" data-label_2="WEATHER" data-font="Open Sans" >GATLINBURG WEATHER</a>
       <div class="footer">
         <div class="container">
           <div class="row">
@@ -444,6 +440,31 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="bModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="bmodal-content">
+        <div class="bmodal-header">
+          <span id = "close" class="close">&times;</span>
+          <div class = "text-center"> 
+            <h2>Take our Cabin Finder Tool In Order To Find The Perfect Cabin</h2>
+          </div>
+        </div>
+        <div class="bmodal-body">
+          <div class = "row justify-content-center">
+            <button id="quiz" class ="box btn btn-white btn float-center">Take Now!</button>
+          </div>
+        </div>
+        <div class="bmodal-footer">
+          <div class = "text-center">
+            <h3>Modal Footer</h3>
+          </div>
+        </div>
+      </div>
+
     </div>
     <!-- .site-wrap -->
 
@@ -565,6 +586,9 @@
       async
       defer
     ></script>
+    <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
     <script src="js/selection.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
