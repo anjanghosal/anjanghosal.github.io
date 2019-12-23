@@ -8,13 +8,18 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154884180-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-154884180-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-154884180-1');
+      gtag("config", "UA-154884180-1");
     </script>
     <link
       href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Montserrat:400,700|Roboto&display=swap"
@@ -47,368 +52,399 @@
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <div class="site-wrap">
-      <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
+    <div class="header-top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 text-center">
+            <a href="index.html" class="site-logo">
+              <img src="images/Logo.jpg" alt="Image" class="img-fluid" />
+            </a>
           </div>
+          <a
+            href="#"
+            class="mx-auto d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"
+            ><span class="icon-menu h3"></span
+          ></a>
         </div>
-        <div class="site-mobile-menu-body"></div>
       </div>
 
-      <div class="header-top">
+      <div
+        class="site-navbar py-2 js-sticky-header site-navbar-target d-none pl-0 d-lg-block"
+        role="banner"
+      >
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 text-center">
-              <a href="index.html" class="site-logo">
-                <img src="images/Logo.jpg" alt="Image" class="img-fluid" />
-              </a>
-            </div>
-            <a
-              href="#"
-              class="mx-auto d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"
-              ><span class="icon-menu h3"></span
-            ></a>
-          </div>
-        </div>
-
-        <div
-          class="site-navbar py-2 js-sticky-header site-navbar-target d-none pl-0 d-lg-block"
-          role="banner"
-        >
-          <div class="container">
-            <div class="d-flex align-items-center">
-              <div class="mx-auto">
-                <nav
-                  class="site-navigation position-relative text-left"
-                  role="navigation"
+          <div class="d-flex align-items-center">
+            <div class="mx-auto">
+              <nav
+                class="site-navigation position-relative text-left"
+                role="navigation"
+              >
+                <ul
+                  class="site-menu main-menu js-clone-nav mx-auto d-none pl-0 d-lg-block border-none"
                 >
-                  <ul
-                    class="site-menu main-menu js-clone-nav mx-auto d-none pl-0 d-lg-block border-none"
-                  >
-                    <li class="active">
-                      <a href="index.html" class="nav-link text-left">Home</a>
-                    </li>
-                    <li>
-                      <a href="about.html" class="nav-link text-left">About</a>
-                    </li>
-                    <li>
-                      <a href="catalog.html" class="nav-link text-left"
-                        >Cabins</a>
-                    </li>
-                    <li>
-                      <a href="events.html" class="nav-link text-left">Events</a>
-                    </li>
-                    <li>
-                      <a href="contact.html" class="nav-link text-left"
-                        >Contact</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="owl-carousel hero-slide owl-style">
-        <div
-          class="intro-section container"
-          style="background-image: url('./images/main/main_1.jpg');"
-        >
-          <div
-            class="row justify-content-center text-center align-items-center"
-          >
-            <div class="col-md-8">
-              <span class="sub-title">Plan Your Next Mountain Getaway</span>
-              <h1>Gatlinburg</h1>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="intro-section container"
-          style="background-image: url('./images/main/main_2.jpg');"
-          id = "quiz"
-        >
-          <div
-            class="row justify-content-center text-center align-items-center"
-          >
-            <div class="col-md-8">
-              <span class="sub-title">Take our interactive quiz to find your perfect cabin</span>
-              <h1>Cabins For Everyone</h1>
-              
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="intro-section container"
-          style="background-image: url('./images/main/main_3.jpg');"
-        >
-          <div
-            class="row justify-content-center text-center align-items-center"
-          >
-            <div class="col-md-8">
-              <span class="sub-title">Welcome</span>
-              <h1>Wines For Everyone</h1>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="intro-section container"
-          style="background-image: url('./images/main/main_4.jpg');"
-        >
-          <div
-            class="row justify-content-center text-center align-items-center"
-          >
-            <div class="col-md-8">
-              <span class="sub-title">Welcome</span>
-              <h1>Wines For Everyone</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="site-section mt-5">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-12 section-title text-center mb-5">
-              <h2 class="d-block">Featured Cabins</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Commodi, perspiciatis!
-              </p>
-              <p>
-                <a href="catalog.html"
-                  >View All Cabins <span class="icon-long-arrow-right"></span
-                ></a>
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 mb-5 col-md-6">
-              <div class="wine_v_1 text-center pb-4">
-                <a
-                  href="GrandviewTheaterLodge.html"
-                  class="thumbnail d-block mb-4"
-                  ><img
-                    src="./images/GrandviewTheaterLodge/img1.jpg"
-                    alt="Image"
-                    class="img-fluid"
-                /></a>
-                <div>
-                  <h3 class="heading mb-1">
-                    <a href="GrandviewTheaterLodge.html"
-                      >Grandview Theater Lodge</a
+                  <li class="active">
+                    <a href="index.html" class="nav-link text-left">Home</a>
+                  </li>
+                  <li>
+                    <a href="about.html" class="nav-link text-left">About</a>
+                  </li>
+                  <li>
+                    <a href="catalog.html" class="nav-link text-left">Cabins</a>
+                  </li>
+                  <li>
+                    <a href="events.html" class="nav-link text-left">Events</a>
+                  </li>
+                  <li>
+                    <a href="contact.html" class="nav-link text-left"
+                      >Contact</a
                     >
-                  </h3>
-                  <span class="price">Price on Request</span>
-                </div>
-
-                <div class="wine-actions">
-                  <h3 class="heading-2">
-                    <a href="GrandviewTheaterLodge.html">7 Bedroom/Sleeps 17</a>
-                  </h3>
-                  <span class="price d-block">Price on Request</span>
-
-                  <div class="rating">
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star-o"></span>
-                  </div>
-
-                  <a href="GrandviewTheaterLodge.html" class="btn add"
-                    ><span class="icon-shopping-bag mr-3"></span> Learn More</a
-                  >
-                </div>
-              </div>
+                  </li>
+                </ul>
+              </nav>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="col-lg-4 mb-5 col-md-6">
-              <div class="wine_v_1 text-center pb-4">
-                <a href="SmokyMountainLodge.html" class="thumbnail d-block mb-4"
-                  ><img
-                    src="./images/SmokyMountainLodge/img1.jpg"
-                    alt="Image"
-                    class="img-fluid"
-                /></a>
-                <div>
-                  <h3 class="heading mb-1">
-                    <a href="SmokyMountainLodge.html">Smoky Mountain Lodge</a>
-                  </h3>
-                  <span class="price">Price on Request</span>
-                </div>
-
-                <div class="wine-actions">
-                  <h3 class="heading-2">
-                    <a href="SmokyMountainLodge.html">Smoky Mountain Lodge</a>
-                  </h3>
-                  <span class="price d-block">Price on Request</span>
-
-                  <div class="rating">
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star-o"></span>
-                  </div>
-
-                  <a href="SmokyMountainLodge.html" class="btn add"
-                    ><span class="icon-shopping-bag mr-3"></span> Learn More</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 mb-5 col-md-6">
-              <div class="wine_v_1 text-center pb-4">
-                <a href="ItsAWaterfulLife.html" class="thumbnail d-block mb-4"
-                  ><img
-                    src="./images/ItsAWaterfulLife/img1.jpg"
-                    alt="Image"
-                    class="img-fluid"
-                /></a>
-                <div>
-                  <h3 class="heading mb-1">
-                    <a href="ItsAWaterfulLife.html">It's A Waterful Life</a>
-                  </h3>
-                  <span class="price">Price on Request</span>
-                </div>
-
-                <div class="wine-actions">
-                  <h3 class="heading-2">
-                    <a href="ItsAWaterfulLife.html">2 Bedroom/Sleeps 8</a>
-                  </h3>
-                  <span class="price d-block">Price on Request</span>
-
-                  <div class="rating">
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star-o"></span>
-                  </div>
-
-                  <a href="ItsAWaterfulLife.html" class="btn add"
-                    ><span class="icon-shopping-bag mr-3"></span> Learn More</a
-                  >
-                </div>
-              </div>
-            </div>
+    <div class="owl-carousel hero-slide owl-style">
+      <div
+        class="intro-section container"
+        style="background-image: url('./images/main/main_1.jpg');"
+      >
+        <div class="row justify-content-center text-center align-items-center">
+          <div class="col-md-8">
+            <span class="sub-title">Plan Your Next Mountain Getaway</span>
+            <h1>Gatlinburg</h1>
           </div>
         </div>
       </div>
 
       <div
-        class="hero-2"
-        style="background-image: url('images/main/gatlinburg.jpg');"
+        class="intro-section container"
+        style="background-image: url('./images/main/main_2.jpg');"
       >
-        <div class="container">
-          <div
-            class="row justify-content-center text-center align-items-center"
-          >
-            <div class="col-md-8">
-              <span class="sub-title">Welcome</span>
-              <h2>Wines For Everyone</h2>
-            </div>
+        <div class="row justify-content-center text-center align-items-center">
+          <div class="col-md-8">
+            <span class="sub-title"
+              >Take our interactive quiz to find your perfect cabin</span
+            >
+            <h1>Cabins For Everyone</h1>
           </div>
         </div>
       </div>
 
-      <div class="site-section bg-light">
-        <div class="container">
-          <div class="owl-carousel owl-slide-3 owl-slide">
-            <blockquote class="testimony">
-              <img src="images/person_1.jpg" alt="Image" />
-              <p>
-                &ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Libero sapiente beatae, nemo quasi quo neque consequatur rem
-                porro reprehenderit, a dignissimos unde ut enim fugiat deleniti
-                quae placeat in cumque?&rdquo;
-              </p>
-              <p class="small text-primary">&mdash; Collin Miller</p>
-            </blockquote>
-            <blockquote class="testimony">
-              <img src="images/person_2.jpg" alt="Image" />
-              <p>
-                &ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Libero sapiente beatae, nemo quasi quo neque consequatur rem
-                porro reprehenderit, a dignissimos unde ut enim fugiat deleniti
-                quae placeat in cumque?&rdquo;
-              </p>
-              <p class="small text-primary">&mdash; Harley Perkins</p>
-            </blockquote>
-            <blockquote class="testimony">
-              <img src="images/person_3.jpg" alt="Image" />
-              <p>
-                &ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Libero sapiente beatae, nemo quasi quo neque consequatur rem
-                porro reprehenderit, a dignissimos unde ut enim fugiat deleniti
-                quae placeat in cumque?&rdquo;
-              </p>
-              <p class="small text-primary">&mdash; Levi Morris</p>
-            </blockquote>
-            <blockquote class="testimony">
-              <img src="images/person_1.jpg" alt="Image" />
-              <p>
-                &ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Libero sapiente beatae, nemo quasi quo neque consequatur rem
-                porro reprehenderit, a dignissimos unde ut enim fugiat deleniti
-                quae placeat in cumque?&rdquo;
-              </p>
-              <p class="small text-primary">&mdash; Allie Smith</p>
-            </blockquote>
+      <div
+        class="intro-section container"
+        style="background-image: url('./images/main/main_3.jpg');"
+      >
+        <div class="row justify-content-center text-center align-items-center">
+          <div class="col-md-8">
+            <span class="sub-title">Welcome</span>
+            <h1>Wines For Everyone</h1>
           </div>
         </div>
-      </div> 
+      </div>
+
+      <div
+        class="intro-section container"
+        style="background-image: url('./images/main/main_4.jpg');"
+      >
+        <div class="row justify-content-center text-center align-items-center">
+          <div class="col-md-8">
+            <span class="sub-title">Welcome</span>
+            <h1>Wines For Everyone</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section mt-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 section-title text-center mb-5">
+            <h2 class="d-block">Featured Cabins</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi,
+              perspiciatis!
+            </p>
+            <p>
+              <a href="catalog.html"
+                >View All Cabins <span class="icon-long-arrow-right"></span
+              ></a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mb-5 col-md-6">
+            <div class="wine_v_1 text-center pb-4">
+              <a
+                href="GrandviewTheaterLodge.html"
+                class="thumbnail d-block mb-4"
+                ><img
+                  src="./images/GrandviewTheaterLodge/img1.jpg"
+                  alt="Image"
+                  class="img-fluid"
+              /></a>
+              <div>
+                <h3 class="heading mb-1">
+                  <a href="GrandviewTheaterLodge.html"
+                    >Grandview Theater Lodge</a
+                  >
+                </h3>
+                <span class="price">Price on Request</span>
+              </div>
+
+              <div class="wine-actions">
+                <h3 class="heading-2">
+                  <a href="GrandviewTheaterLodge.html">7 Bedroom/Sleeps 17</a>
+                </h3>
+                <span class="price d-block">Price on Request</span>
+
+                <div class="rating">
+                  <span class="icon-star"></span>
+                  <span class="icon-star"></span>
+                  <span class="icon-star"></span>
+                  <span class="icon-star"></span>
+                  <span class="icon-star-o"></span>
+                </div>
+
+                <a href="GrandviewTheaterLodge.html" class="btn add"
+                  ><span class="icon-shopping-bag mr-3"></span> Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-5 col-md-6">
+            <div class="wine_v_1 text-center pb-4">
+              <a href="SmokyMountainLodge.html" class="thumbnail d-block mb-4"
+                ><img
+                  src="./images/SmokyMountainLodge/img1.jpg"
+                  alt="Image"
+                  class="img-fluid"
+              /></a>
+              <div>
+                <h3 class="heading mb-1">
+                  <a href="SmokyMountainLodge.html">Smoky Mountain Lodge</a>
+                </h3>
+                <span class="price">Price on Request</span>
+              </div>
+
+              <div class="wine-actions">
+                <h3 class="heading-2">
+                  <a href="SmokyMountainLodge.html">Smoky Mountain Lodge</a>
+                </h3>
+                <span class="price d-block">Price on Request</span>
+
+                <div class="rating">
+                  <span class="icon-star"></span>
+                  <span class="icon-star"></span>
+                  <span class="icon-star"></span>
+                  <span class="icon-star"></span>
+                  <span class="icon-star-o"></span>
+                </div>
+
+                <a href="SmokyMountainLodge.html" class="btn add"
+                  ><span class="icon-shopping-bag mr-3"></span> Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-5 col-md-6">
+            <div class="wine_v_1 text-center pb-4">
+              <a href="ItsAWaterfulLife.html" class="thumbnail d-block mb-4"
+                ><img
+                  src="./images/ItsAWaterfulLife/img1.jpg"
+                  alt="Image"
+                  class="img-fluid"
+              /></a>
+              <div>
+                <h3 class="heading mb-1">
+                  <a href="ItsAWaterfulLife.html">It's A Waterful Life</a>
+                </h3>
+                <span class="price">Price on Request</span>
+              </div>
+
+              <div class="wine-actions">
+                <h3 class="heading-2">
+                  <a href="ItsAWaterfulLife.html">2 Bedroom/Sleeps 8</a>
+                </h3>
+                <span class="price d-block">Price on Request</span>
+
+                <div class="rating">
+                  <span class="icon-star"></span>
+                  <span class="icon-star"></span>
+                  <span class="icon-star"></span>
+                  <span class="icon-star"></span>
+                  <span class="icon-star-o"></span>
+                </div>
+
+                <a href="ItsAWaterfulLife.html" class="btn add"
+                  ><span class="icon-shopping-bag mr-3"></span> Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="hero-2"
+      style="background-image: url('images/main/gatlinburg.jpg');"
+    >
+      <div class="container">
+        <div class="row justify-content-center text-center align-items-center">
+          <div class="col-md-8">
+            <span class="sub-title">Welcome</span>
+            <h2>Wines For Everyone</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="owl-carousel owl-slide-3 owl-slide">
+          <blockquote class="testimony">
+            <img src="images/person_1.jpg" alt="Image" />
+            <p>
+              &ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Libero sapiente beatae, nemo quasi quo neque consequatur rem porro
+              reprehenderit, a dignissimos unde ut enim fugiat deleniti quae
+              placeat in cumque?&rdquo;
+            </p>
+            <p class="small text-primary">&mdash; Collin Miller</p>
+          </blockquote>
+          <blockquote class="testimony">
+            <img src="images/person_2.jpg" alt="Image" />
+            <p>
+              &ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Libero sapiente beatae, nemo quasi quo neque consequatur rem porro
+              reprehenderit, a dignissimos unde ut enim fugiat deleniti quae
+              placeat in cumque?&rdquo;
+            </p>
+            <p class="small text-primary">&mdash; Harley Perkins</p>
+          </blockquote>
+          <blockquote class="testimony">
+            <img src="images/person_3.jpg" alt="Image" />
+            <p>
+              &ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Libero sapiente beatae, nemo quasi quo neque consequatur rem porro
+              reprehenderit, a dignissimos unde ut enim fugiat deleniti quae
+              placeat in cumque?&rdquo;
+            </p>
+            <p class="small text-primary">&mdash; Levi Morris</p>
+          </blockquote>
+          <blockquote class="testimony">
+            <img src="images/person_1.jpg" alt="Image" />
+            <p>
+              &ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Libero sapiente beatae, nemo quasi quo neque consequatur rem porro
+              reprehenderit, a dignissimos unde ut enim fugiat deleniti quae
+              placeat in cumque?&rdquo;
+            </p>
+            <p class="small text-primary">&mdash; Allie Smith</p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
     <div class="site-section bg-light">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 section-title text-center mb-5">
             <h2 class="d-block">Local Attractions</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, perspiciatis!</p>
-            <p><a href="#">Learn More <span class="icon-long-arrow-right"></span></a></p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi,
+              perspiciatis!
+            </p>
+            <p>
+              <a href="#"
+                >Learn More <span class="icon-long-arrow-right"></span
+              ></a>
+            </p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 mb-4 mb-lg-0 col-md-6">
             <div class="post-entry-1">
-              <a href="post-single.html"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
-              <h2><a href="blog-single.html">What You Need To Know About Premium Rosecco</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi temporibus praesentium neque, voluptatum quam quibusdam.</p>
+              <a href="post-single.html"
+                ><img src="images/img_1.jpg" alt="Image" class="img-fluid"
+              /></a>
+              <h2>
+                <a href="blog-single.html"
+                  >What You Need To Know About Premium Rosecco</a
+                >
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Eligendi temporibus praesentium neque, voluptatum quam
+                quibusdam.
+              </p>
               <div class="post-meta">
-                <span class="d-block"><a href="#">Dave Rogers</a> in <a href="#">News</a></span>
+                <span class="d-block"
+                  ><a href="#">Dave Rogers</a> in <a href="#">News</a></span
+                >
               </div>
             </div>
           </div>
           <div class="col-lg-4 mb-4 mb-lg-0 col-md-6">
             <div class="post-entry-1">
-              <a href="post-single.html"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
-              <h2><a href="blog-single.html">What You Need To Know About Premium Rosecco</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi temporibus praesentium neque, voluptatum quam quibusdam.</p>
+              <a href="post-single.html"
+                ><img src="images/img_2.jpg" alt="Image" class="img-fluid"
+              /></a>
+              <h2>
+                <a href="blog-single.html"
+                  >What You Need To Know About Premium Rosecco</a
+                >
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Eligendi temporibus praesentium neque, voluptatum quam
+                quibusdam.
+              </p>
               <div class="post-meta">
-                <span class="d-block"><a href="#">Dave Rogers</a> in <a href="#">News</a></span>
+                <span class="d-block"
+                  ><a href="#">Dave Rogers</a> in <a href="#">News</a></span
+                >
               </div>
             </div>
           </div>
           <div class="col-lg-4 mb-4 mb-lg-0 col-md-6">
             <div class="post-entry-1">
-              <a href="post-single.html"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-              <h2><a href="blog-single.html">What You Need To Know About Premium Rosecco</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi temporibus praesentium neque, voluptatum quam quibusdam.</p>
+              <a href="post-single.html"
+                ><img src="images/img_3.jpg" alt="Image" class="img-fluid"
+              /></a>
+              <h2>
+                <a href="blog-single.html"
+                  >What You Need To Know About Premium Rosecco</a
+                >
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Eligendi temporibus praesentium neque, voluptatum quam
+                quibusdam.
+              </p>
               <div class="post-meta">
-                <span class="d-block"><a href="#">Dave Rogers</a> in <a href="#">News</a></span>
+                <span class="d-block"
+                  ><a href="#">Dave Rogers</a> in <a href="#">News</a></span
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
-      <a class="weatherwidget-io" style="vertical-align: -200px" href="https://forecast7.com/en/35d71n83d51/gatlinburg/?unit=us" data-label_1="GATLINBURG" data-label_2="WEATHER" data-font="Open Sans" >GATLINBURG WEATHER</a>
+      <a
+        class="weatherwidget-io"
+        style="vertical-align: -200px"
+        href="https://forecast7.com/en/35d71n83d51/gatlinburg/?unit=us"
+        data-label_1="GATLINBURG"
+        data-label_2="WEATHER"
+        data-font="Open Sans"
+        >GATLINBURG WEATHER</a
+      >
       <div class="footer">
         <div class="container">
           <div class="row">
@@ -444,36 +480,37 @@
 
     <!-- The Modal -->
     <div id="bModal" class="modal">
-
       <!-- Modal content -->
       <div class="bmodal-content">
         <div class="bmodal-header">
-          <span id = "close" class="close">&times;</span>
-          <div class = "text-center"> 
-            <h2>Take our Cabin Finder Tool In Order To Find The Perfect Cabin</h2>
+          <span id="close" class="close">&times;</span>
+          <div class="text-center">
+            <h2>
+              Take our Cabin Finder Tool In Order To Find The Perfect Cabin
+            </h2>
           </div>
         </div>
         <div class="bmodal-body">
-          <div class = "row justify-content-center">
-            <button id="quiz" class ="box btn btn-white btn float-center">Take Now!</button>
+          <div class="row justify-content-center">
+            <button id="quiz" class="box btn btn-white btn float-center">
+              Take Now!
+            </button>
           </div>
         </div>
         <div class="bmodal-footer">
-          <div class = "text-center">
+          <div class="text-center">
             <h3>Modal Footer</h3>
           </div>
         </div>
       </div>
-
     </div>
     <!-- .site-wrap -->
 
     <!-- Modal 1 -->
     <div id="Modal1" class="modal">
-
       <!-- Modal content -->
       <div class="modal-content">
-        <span id = "close1" class="close">&times;</span>
+        <span id="close1" class="close">&times;</span>
         <h2>
           <p align="center">How big is your group?</p>
         </h2>
@@ -484,14 +521,12 @@
           <button class="choice1 box btn btn-primary">15+ People</button>
         </div>
       </div>
-    
     </div>
     <!-- Modal 2 -->
     <div id="Modal2" class="modal">
-
       <!-- Modal content -->
       <div class="modal-content">
-        <span id = "close2" class="close">&times;</span>
+        <span id="close2" class="close">&times;</span>
         <h2>
           <p align="center">Which city would you like to stay in?</p>
         </h2>
@@ -500,14 +535,12 @@
           <button class="choice2 box btn btn-primary">Gatlinburg</button>
         </div>
       </div>
-    
     </div>
     <!-- Modal 3 -->
     <div id="Modal3" class="modal">
-
       <!-- Modal content -->
       <div class="modal-content">
-        <span id = "close3" class="close">&times;</span>
+        <span id="close3" class="close">&times;</span>
         <h2>
           <p align="center">What atmosphere are you looking for?</p>
         </h2>
@@ -516,45 +549,58 @@
           <button class="choice3 box btn btn-primary">Mountain Views</button>
         </div>
       </div>
-    
     </div>
     <!-- Modal 4 -->
     <div id="Modal4" class="modal">
-
       <!-- Modal content -->
       <div class="modal-content">
-        <span id = "close4" class="close">&times;</span>
+        <span id="close4" class="close">&times;</span>
         <h2>
           <p align="center">What kind of cabin would you like?</p>
         </h2>
         <div class="grid">
           <div class="imgbtn">
-            <img src="./images/GrandviewTheaterLodge/img1.jpg" alt = "" style="width:100%">
-            <div class = "overlay">
+            <img
+              src="./images/GrandviewTheaterLodge/img1.jpg"
+              alt=""
+              style="width:100%"
+            />
+            <div class="overlay">
               <div class="centered">Grandview Theater Lodge</div>
             </div>
           </div>
           <div class="imgbtn">
-            <img src="./images/ItsAWaterfulLife/img1.jpg" alt="" style="width:100%">
-            <div class = "overlay">
+            <img
+              src="./images/ItsAWaterfulLife/img1.jpg"
+              alt=""
+              style="width:100%"
+            />
+            <div class="overlay">
               <div class="centered">It's A Waterful Life</div>
             </div>
           </div>
           <div class="imgbtn">
-            <img src="./images/SmokyMountainLodge/img1.jpg" alt="" style="width:100%">
-            <div class = "overlay">
+            <img
+              src="./images/SmokyMountainLodge/img1.jpg"
+              alt=""
+              style="width:100%"
+            />
+            <div class="overlay">
               <div class="centered">Smoky Mountain Lodge</div>
             </div>
           </div>
           <div class="imgbtn">
-            <img src="./images/newcabin/comingsoon.jpg" alt="" style="width:100%">
-            <div class = "overlay">
+            <img
+              src="./images/newcabin/comingsoon.jpg"
+              alt=""
+              style="width:100%"
+            />
+            <div class="overlay">
               <div class="centered">Coming Soon!</div>
             </div>
           </div>
         </div>
       </div>
-    
     </div>
     <!-- loader -->
     <div id="loader" class="show fullscreen">
@@ -587,7 +633,16 @@
       defer
     ></script>
     <script>
-      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+      !(function(d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://weatherwidget.io/js/widget.min.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      })(document, "script", "weatherwidget-io-js");
     </script>
     <script src="js/selection.js"></script>
     <script src="js/modal.js"></script>
