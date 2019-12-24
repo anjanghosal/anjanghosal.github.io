@@ -64,12 +64,14 @@ window.onclick = function(event) {
     event.target == modal1 ||
     event.target == modal2 ||
     event.target == modal3 ||
-    event.target == modal4
+    event.target == modal4 ||
+    event.target == modalb
   ) {
     modal1.style.display = "none";
     modal2.style.display = "none";
     modal3.style.display = "none";
     modal4.style.display = "none";
+    modalb.style.display = "none";
   }
 };
 
