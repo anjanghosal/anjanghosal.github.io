@@ -2096,8 +2096,8 @@ h5,
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -2128,15 +2128,15 @@ h5,
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 body {
-  background: #ffffff; 
+  background: #ffffff;
   color: #414141;
-  font: 400 17px/2em 'Source Sans Pro', sans-serif;
+  font: 400 17px/2em "Source Sans Pro", sans-serif;
 }
 
 .select-box {
   cursor: pointer;
-  position : relative;
-  max-width:  20em;
+  position: relative;
+  max-width: 20em;
   margin: 5em auto;
   width: 100%;
 }
@@ -2145,7 +2145,7 @@ body {
 .label {
   color: #414141;
   display: block;
-  font: 400 17px/2em 'Source Sans Pro', sans-serif;
+  font: 400 17px/2em "Source Sans Pro", sans-serif;
 }
 
 .select {
@@ -2169,7 +2169,7 @@ body {
   cursor: pointer;
 }
 .open .label::after {
-   content: "▲";
+  content: "▲";
 }
 .label::after {
   content: "▼";
@@ -2196,28 +2196,28 @@ body {
 }
 
 /* Grid Button Layout*/
-.grid{
+.grid {
   margin: 20px auto;
-  width:auto;
-  height:auto;
-  background-color:#fff;
-  display:grid;
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  display: grid;
   grid-template-columns: 20vw 20vw;
   grid-row: auto auto;
   grid-column-gap: 2vw;
   grid-row-gap: 2vw;
 }
 
-.box{
-  background-color:#2277b2;
-  padding:20px;
-  border-radius:10px;
-  color:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:2vw;
-  font-family:sans-serif;
+.box {
+  background-color: #2277b2;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+  font-family: sans-serif;
 }
 
 /* img buttons */
@@ -2257,8 +2257,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-size:1vw;
-  font-family:sans-serif;
+  font-size: 1vw;
+  font-family: sans-serif;
 }
 
 /*Bottom Modal Content */
@@ -2272,12 +2272,12 @@ body {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   -webkit-animation-name: fadeIn; /* Fade in the background */
   -webkit-animation-duration: 0.4s;
   animation-name: fadeIn;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 
 /* Modal Content */
@@ -2289,7 +2289,7 @@ body {
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 
 /* The Close Button */
@@ -2313,7 +2313,9 @@ body {
   color: white;
 }
 
-.bmodal-body {padding: 2px 16px;}
+.bmodal-body {
+  padding: 2px 16px;
+}
 
 .bmodal-footer {
   padding: 2px 16px;
@@ -2323,21 +2325,51 @@ body {
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
-  from {bottom: -300px; opacity: 0} 
-  to {bottom: 0; opacity: 1}
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeIn {
-  from {opacity: 0} 
-  to {opacity: 1}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0} 
-  to {opacity: 1}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#content-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  #content-mobile {
+    display: block;
+  }
 }
