@@ -6,7 +6,6 @@ var modal3 = document.getElementById("Modal3");
 var modal4 = document.getElementById("Modal4");
 // Get the button that opens the modal
 var btn = document.getElementById("quiz");
-console.log(btn);
 var choice1 = document.getElementsByClassName("choice1");
 var choice2 = document.getElementsByClassName("choice2");
 var choice3 = document.getElementsByClassName("choice3");
