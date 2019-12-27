@@ -74,6 +74,6 @@ window.onclick = function(event) {
   }
 };
 
-setTimeout(function() {
+/*setTimeout(function() {
   modalb.style.display = "block";
-}, 3000);
+}, 3000);*/

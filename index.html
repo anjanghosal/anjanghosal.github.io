@@ -88,8 +88,23 @@
                   <li>
                     <a href="about.html" class="nav-link text-left">About</a>
                   </li>
-                  <li>
-                    <a href="catalog.html" class="nav-link text-left">Cabins</a>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      data-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Cabins</a
+                    >
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
                   </li>
                   <li>
                     <a href="events.html" class="nav-link text-left">Events</a>
@@ -643,6 +658,7 @@
         }
       })(document, "script", "weatherwidget-io-js");
     </script>
+    <script src="js/dropdown.js"></script>
     <script src="js/selection.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
