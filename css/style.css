@@ -2506,3 +2506,8 @@ body {
   margin-right: 20vw;
   text-align: justify;
 }
+@media only screen and (max-width: 990px) {
+  .cabintext {
+    display: none;
+  }
+}
