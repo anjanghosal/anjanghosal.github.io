@@ -2497,3 +2497,17 @@ body {
 .dropdown-toggle::after {
   content: none;
 }
+
+.cabintext {
+  display: block;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  text-align: justify;
+}
+@media only screen and (max-width: 990px) {
+  .cabintext {
+    display: none;
+  }
+}
