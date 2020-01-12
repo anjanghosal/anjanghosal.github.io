@@ -2502,8 +2502,8 @@ body {
   display: block;
   margin-top: 2vw;
   margin-bottom: 2vw;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
   text-align: justify;
 }
 @media only screen and (max-width: 990px) {
